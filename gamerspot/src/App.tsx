@@ -19,12 +19,12 @@ const App = () => {
 
       <Show above="lg">
         <GridItem area="aside" paddingX={5}>
-          <GenreList onSelectegenre={(genre) => setSelectedGenre(genre)} />
+          <GenreList selectedgenre={selectedGenre} onSelectegenre={(genre) => setSelectedGenre(genre)} />
         </GridItem>
       </Show>
 
       <GridItem area="main">
-        <GameGrid selectedGenre={selectedGenre}/>
+        <GameGrid  selectedGenre={selectedGenre}/>
       </GridItem>
     </Grid>
   );
