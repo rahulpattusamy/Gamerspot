@@ -13,9 +13,10 @@ const GameGrid = ({gamequery}:Props) => {
   const { data, error, isLoading } = useGames(gamequery);
   const skeletons = [1, 2, 3, 4, 5, 6];
 
+  if(error)return<Text>{error}</Text>
+
   return (
-    <div>
-      {error && <Text>{error}</Text>}
+   
       <SimpleGrid columns={{ sm: 1, md: 2, lg: 3, xl: 4 }} spacing={6}>
         {isLoading &&
           skeletons.map((skeleton) => (
@@ -30,7 +31,7 @@ const GameGrid = ({gamequery}:Props) => {
           </GamecardContainer>
         ))}
       </SimpleGrid>
-    </div>
+    
   );
 };
 
