@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "@tanstack/react-query": "^5.80.7",
+    "@tanstack/react-query-devtools": "^5.80.7",
     "axios": "^1.8.4",
     "icons": "^1.0.0",
     "react": "^19.1.0",
