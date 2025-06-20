@@ -3,13 +3,11 @@ import useGames from "../hooks/useGames";
 import GameCard from "./GameCard";
 import GameCardSkeleton from "./GameCardSkeleton";
 import GamecardContainer from "./GamecardContainer";
-import { GameQuery } from "../App";
 import React from "react";
 
-interface Props {
-  gamequery: GameQuery;
-}
-const GameGrid = ({ gamequery }: Props) => {
+
+
+const GameGrid = () => {
   const {
     data,
     error,
@@ -17,7 +15,7 @@ const GameGrid = ({ gamequery }: Props) => {
     isFetchingNextPage,
     fetchNextPage,
     hasNextPage,
-  } = useGames(gamequery);
+  } = useGames();
 
   const skeletons = [1, 2, 3, 4, 5, 6];
 
