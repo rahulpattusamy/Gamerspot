@@ -11,7 +11,8 @@ const router = createBrowserRouter([{
      children:[{
         index:true,
         element:<HomePage/>
-     },{path:'games/:id' , element:<GameDetailPage/>}]
+     },{path:'games/:slug' , element:<GameDetailPage/>}]
 }])
 
 export default router
+
