@@ -14,6 +14,7 @@
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@tanstack/react-query": "^5.84.0",
+    "@tanstack/react-query-devtools": "^5.84.0",
     "axios": "^1.11.0",
     "framer-motion": "^12.7.4",
     "ms": "^2.1.3",
